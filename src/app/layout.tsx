@@ -1,13 +1,13 @@
 import Providers from "./Redux/Provider";
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 // import "./globals.css";
 
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "./component/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en">
-        <body className={inter.className}>
+        <body>
           <div className="album py-5 bg-body-tertiary">
             <div className="container">
               <Header />
